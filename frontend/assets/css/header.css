@@ -1,0 +1,56 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-image {
+    width: 120px;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-item{
+    text-decoration: none;
+    color: white;
+    padding: 2em 1em;
+    transition: 1s;
+    font-size: 15px;
+}
+
+.header-item:hover {
+    color: gray;
+}
+
+.btn-search, .btn-notification, .profile-photo {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-text {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 1s;
+}
+
+.profile-text:hover {
+    color: var(--principal-color);
+}
+
+.profile-photo::after{
+    content: '⯆';
+    filter: invert();
+    padding-left: .5em;
+}
+
+
+

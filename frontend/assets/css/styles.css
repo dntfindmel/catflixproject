@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Schibsted+Grotesk:wght@400;500;700&display=swap');
+
+:root {
+    --principal-font: 'Schibsted Grotesk', sans-serif;
+    --title-font: 'Bebas Neue', cursive;
+    --principal-color: rgb(255, 52, 26);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    height: 100vh;
+    background: black;
+    font-size: 16px;
+    font-family: var(--principal-font);
+}
