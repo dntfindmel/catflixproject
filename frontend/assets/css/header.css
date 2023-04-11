@@ -15,6 +15,7 @@
 
 .header-list {
     display: flex;
+    margin-right: 14em;
 }
 
 .header-item{

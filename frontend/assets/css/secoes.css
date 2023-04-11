@@ -14,19 +14,25 @@
 .slide-image {
     padding-top: 1em;
     padding-right: .5em;
-    width: 230px;
-    height: 140px;
+    width: 280px;
+    height: 170px;
+    object-fit: cover;
     border-radius: 10px;
     transition: 1s;
 }
 
 .slide-image:hover {
-    width: 260px;
-    height: 180px;
+    width: 320px;
+    height: 200px;
 }
 
-.recomendation, .ficction {
+.recomendation, .action, .drama, .fiction, .horror, .romance  {
     color: white;
     margin-left: 9em;
     margin-top: 1.5em;
 }
+
+.horror {
+    margin-bottom: 7em;
+}
+
