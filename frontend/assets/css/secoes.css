@@ -12,27 +12,27 @@
 }
 
 .slide-image {
-    padding-top: 1em;
-    padding-right: .5em;
     width: 280px;
     height: 170px;
     object-fit: cover;
     border-radius: 10px;
-    transition: 1s;
-}
+    transition: 0.3s;
+    object-position: center;
+    margin: 8px 8px 8px 0;
+ }
+ 
+ .slide-image:hover {
+    transform: scale(1.1);
+    margin: 0 15px;
+ }
 
-.slide-image:hover {
-    width: 320px;
-    height: 200px;
-}
-
-.recomendation, .action, .drama, .fiction, .horror, .romance  {
+.recomendation, .action, .drama, .fiction, .horror, .romance, .tv-show  {
     color: white;
     margin-left: 9em;
     margin-top: 1.5em;
 }
 
-.horror {
+.tv-show {
     margin-bottom: 7em;
 }
 

@@ -15,10 +15,10 @@
 
 .header-list {
     display: flex;
-    margin-right: 14em;
+    margin-right: 34em;
 }
 
-.header-item{
+.header-item, .dropdown-item{
     text-decoration: none;
     color: white;
     padding: 2em 1em;
@@ -28,6 +28,29 @@
 
 .header-item:hover {
     color: gray;
+}
+
+.dropdown-btn {
+    padding: 0 1em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    background: #0C0908;
+    padding: .4em 0;
+    width: 6%;
+    display: none;
+    transition: 1s;
+}
+
+.dropdown-list {
+    padding: 4px 0;
+}
+
+.dropdown-item:hover {
+    color: var(--principal-color);
 }
 
 .btn-search, .btn-notification, .profile-photo {

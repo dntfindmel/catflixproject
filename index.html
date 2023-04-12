@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./frontend/assets/img/c-icon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./frontend/assets/css/reset.css">
     <link rel="stylesheet" href="./frontend/assets/css/styles.css">
     <link rel="stylesheet" href="./frontend/assets/css/header.css">
@@ -15,19 +15,18 @@
     <title>Catflix | by Melyssa</title>
 </head>
 <body>
-    <header class="container">
+    <header class="container" id="inicio">
         <nav class="header-container">
             <div class="nav-container">
-                <img src="./frontend/assets/img/catflix-logo.png" alt="catflix logo" class="header-image">
+                <a href="#inicio"><img src="./frontend/assets/img/catflix-logo.png" alt="catflix logo" class="header-image"></a>
 
                 <ul class="header-list">
-                    <li class="header-nav"><a href="#" class="header-item">Início</a></li>
-                    <li class="header-nav"><a href="#" class="header-item">Filmes</a></li>
-                    <li class="header-nav"><a href="#" class="header-item">Séries</a></li>
+                    <li class="header-nav"><a href="#inicio" class="header-item">Início</a></li>
+                    <li class="header-nav"><button class="header-item dropdown-btn" id="dropdownBtn">Filmes</button></li>
+                    <li class="header-nav"><a href="#tv-show" class="header-item">Séries</a></li>
                     <li class="header-nav"><a href="#" class="header-item">Bombando</a></li>
                     <li class="header-nav"><a href="#" class="header-item">Minha lista</a></li>
                 </ul>
-            </div>
 
             <div class="profile-container">
                 <button class="btn-search"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #ffffff;"></i></button>
@@ -36,6 +35,15 @@
                 <button class="profile-photo"><i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i></button>
             </div>
         </nav>
+
+        <ul class="dropdown" id="dropdownMenu">
+            <li class="dropdown-list"><a href="#action" class="dropdown-item">Ação</a></li>
+            <li class="dropdown-list"><a href="#drama" class="dropdown-item">Drama</a></li>
+            <li class="dropdown-list"><a href="#fiction" class="dropdown-item">Ficção</a></li>
+            <li class="dropdown-list"><a href="#romance" class="dropdown-item">Romance</a></li>
+            <li class="dropdown-list"><a href="#horror" class="dropdown-item">Terror</a></li>
+        </ul>
+    </div>
     </header>
 
     <main>
@@ -62,7 +70,7 @@
         </section>
         
         <section class="container"> <!--Seção dos filmes de !Ação!-->
-            <div class="action">
+            <div class="action" id="action">
                 <h1 class="container-title">Filmes de Ação</h1>
 
                 <div class="slide">
@@ -77,7 +85,7 @@
         </section>
 
         <section class="container"> <!--Seção dos filmes de !Drama!-->
-            <div class="drama">
+            <div class="drama" id="drama">
                 <h1 class="container-title">Filmes de Drama</h1>
 
                 <div class="slide">
@@ -92,7 +100,7 @@
         </section>
 
         <section class="container"> <!--Seção dos filmes de !Ficção!-->
-            <div class="fiction">
+            <div class="fiction" id="fiction">
                 <h1 class="container-title">Filmes de Ficção</h1>
 
                 <div class="slide">
@@ -110,7 +118,7 @@
         </section>
 
         <section class="container"> <!--Seção dos filmes de !Romance!-->
-            <div class="romance">
+            <div class="romance" id="romance">
                 <h1 class="container-title">Filmes de Romance</h1>
 
                 <div class="slide">
@@ -123,7 +131,7 @@
         </section>
 
         <section class="container"> <!--Seção dos filmes de !Terror!-->
-            <div class="horror">
+            <div class="horror" id="horror">
                 <h1 class="container-title">Filmes de Terror</h1>
 
                 <div class="slide">
@@ -139,14 +147,26 @@
         </section>
     </main>
 
-    <footer class="container">
+    <section class="container"> <!--Seção dos filmes das !Séries!-->
+        <div class="tv-show" id="tv-show">
+            <h1 class="container-title">Séries</h1>
+
+            <div class="slide">
+                <a href="#"><img src="./frontend/assets/img/houseofcats.jpg" alt="house of cats tv show poster" class="slide-image"></a>
+                <a href="#"><img src="./frontend/assets/img/thebigfangtheory.jpg" alt="the big fang theory tv show poster" class="slide-image"></a>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer class="container"> <!--Footer do Catflix-->
         <div class="social-media">
             <a href=#><i class="fa-brands fa-facebook-f fa-lg icon" style="color: #ffffff;"></i></a>
             <a href=#><i class="fa-brands fa-instagram fa-lg icon" style="color: #ffffff;"></i></a>
             <a href=#><i class="fa-brands fa-twitter fa-lg icon" style="color: #ffffff;"></i></a>
         </div>
 
-        <div class="footer-container">
+        <div class="footer-container"> 
             <nav class="footer-col-one">
                 <ul class="footer-list">
                     <li class="footer-el"><a href=# class="footer-link">Audiodescrição</a></li>
@@ -186,4 +206,7 @@
             <p class="footer-text">2023 Catflix, Inc.</p>
         </div>
     </footer>
+
+    <script src="./frontend/assets/js/header.js"></script>
+</body>
 </html>

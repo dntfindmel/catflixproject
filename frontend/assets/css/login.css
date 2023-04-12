@@ -1,0 +1,97 @@
+.background {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    opacity: 40%;
+    z-index: -1;
+}
+
+.catflix-logo {
+    width: 170px;
+}
+
+.login-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 480px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    padding: 0 4em;
+}
+
+.login-title {
+    font-size: 40px;
+    font-weight: 500;
+    padding: 1.5em 0 .5em 0;
+    
+}
+
+.inpute, .inputp {
+    background: #333333;
+    margin-bottom: 1em;
+    padding: 1.5em;
+    border-color: #333333;
+    border-radius: 4px;
+}
+
+.inpute::placeholder, .inputp::placeholder {
+    color: white;
+}
+
+.submit-btn {
+    width: 350px;
+    margin: 3em 5em 1em 4em;
+    padding: 15px;
+    background: var(--principal-color);
+    color: white;
+    border: var(--principal-color);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.remember {
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.rememberme {
+    color: #666666;
+}
+
+.remember-link {
+    color: #666666;
+    text-decoration: none;
+    padding-left: 4.5em;
+}
+
+.sign-up {
+    display: flex;
+    padding-bottom: 2em;
+    padding-left: 4.5em
+}
+
+.sign-up__text {
+    color: #666666;
+    padding-right: 4px;
+}
+
+.sign-up__link {
+    color: white;
+    text-decoration: none;
+}
+
+.sign-up__link:hover {
+    text-decoration: underline;
+}
