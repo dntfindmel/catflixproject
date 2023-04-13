@@ -14,8 +14,8 @@ dropdownBtn.addEventListener('click', function() {
 
 //Adicionando um evento pra caso o menu dropdown estiver em uma situação diferente da função acima, verificar e mudar para display none.
 document.addEventListener('click', function(event) {
-    if (!dropdownEl.contains.event.target && event.target !== dropdownBtn) {
-        dropdownContainer.style.display = "none";
+    if (event.target !== dropdownBtn) {
+        dropdownEl.style.display = "none";
     }
 })
 

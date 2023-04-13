@@ -14,6 +14,7 @@
 
     <title>Catflix | by Melyssa</title>
 </head>
+
 <body>
     <header class="container" id="inicio">
         <nav class="header-container">
@@ -22,31 +23,33 @@
 
                 <ul class="header-list">
                     <li class="header-nav"><a href="#inicio" class="header-item">Início</a></li>
-                    <li class="header-nav"><button class="header-item dropdown-btn" id="dropdownBtn">Filmes</button></li>
+                    <div class="dropwdown-container">
+                        <li class="header-nav"><button class="header-item dropdown-btn" id="dropdownBtn">Filmes</button></li>
+
+                        <ul class="dropdown" id="dropdownMenu">
+                            <li class="dropdown-list"><a href="#action" class="dropdown-item">Ação</a></li>
+                            <li class="dropdown-list"><a href="#drama" class="dropdown-item">Drama</a></li>
+                            <li class="dropdown-list"><a href="#fiction" class="dropdown-item">Ficção</a></li>
+                            <li class="dropdown-list"><a href="#romance" class="dropdown-item">Romance</a></li>
+                            <li class="dropdown-list"><a href="#horror" class="dropdown-item">Terror</a></li>
+                        </ul>
+                    </div>
                     <li class="header-nav"><a href="#tv-show" class="header-item">Séries</a></li>
                     <li class="header-nav"><a href="#" class="header-item">Bombando</a></li>
                     <li class="header-nav"><a href="#" class="header-item">Minha lista</a></li>
                 </ul>
-
+            </div>
             <div class="profile-container">
                 <button class="btn-search"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #ffffff;"></i></button>
-                <a href="#" class="profile-text">Profile-name</a>
                 <button class="btn-notification"><i class="fa-regular fa-bell fa-xl" style="color: #ffffff;"></i></button>
-                <button class="profile-photo"><i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i></button>
+                <a href="./login.html" class="profile-photo"><i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i></a>
             </div>
         </nav>
-
-        <ul class="dropdown" id="dropdownMenu">
-            <li class="dropdown-list"><a href="#action" class="dropdown-item">Ação</a></li>
-            <li class="dropdown-list"><a href="#drama" class="dropdown-item">Drama</a></li>
-            <li class="dropdown-list"><a href="#fiction" class="dropdown-item">Ficção</a></li>
-            <li class="dropdown-list"><a href="#romance" class="dropdown-item">Romance</a></li>
-            <li class="dropdown-list"><a href="#horror" class="dropdown-item">Terror</a></li>
-        </ul>
-    </div>
+        
     </header>
 
     <main>
+
         <section class="container"> <!--Seções para os carrosséis dos filmes-->
             <div class="continue">
                 <h1 class="container-title">Continuar assistindo como <span id="nome-usuario">!nome-usuário!</span></h1>
@@ -114,7 +117,7 @@
                     <a href="#"><img src="./frontend/assets/img/Robocat.jpg" alt="robocat filme poster" class="slide-image"></a>
                     <a href="#"><img src="./frontend/assets/img/meowtrix.jpg" alt="Meautrix filme poster" class="slide-image"></a>
                 </div>
-            </div>
+            </div> 
         </section>
 
         <section class="container"> <!--Seção dos filmes de !Romance!-->
@@ -161,9 +164,9 @@
 
     <footer class="container"> <!--Footer do Catflix-->
         <div class="social-media">
-            <a href=#><i class="fa-brands fa-facebook-f fa-lg icon" style="color: #ffffff;"></i></a>
-            <a href=#><i class="fa-brands fa-instagram fa-lg icon" style="color: #ffffff;"></i></a>
-            <a href=#><i class="fa-brands fa-twitter fa-lg icon" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f fa-lg icon" style="color: #ffffff;"></i></a>
+            <a href="https://www.instagram.com/dntfindmel/"><i class="fa-brands fa-instagram fa-lg icon" style="color: #ffffff;"></i></a>
+            <a href="https://twitter.com/dntfindmel_"><i class="fa-brands fa-twitter fa-lg icon" style="color: #ffffff;"></i></a>
         </div>
 
         <div class="footer-container"> 
@@ -208,5 +211,6 @@
     </footer>
 
     <script src="./frontend/assets/js/header.js"></script>
+    <script src="./frontend/assets/js/carrossel.js"></script>
 </body>
 </html>

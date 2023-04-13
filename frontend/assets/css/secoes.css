@@ -1,6 +1,7 @@
 .continue {
     color: white;
     margin-left: 9em;
+    padding-top: 10em;
 }
 
 .container-title {
@@ -9,6 +10,7 @@
 
 .slide {
     display: flex;
+    overflow: hidden;
 }
 
 .slide-image {

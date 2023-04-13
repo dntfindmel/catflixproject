@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./frontend/assets/img/c-icon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="./frontend/assets/css/reset.css">
-    <link rel="stylesheet" href="./frontend/assets/css/styles.css">
-    <link rel="stylesheet" href="./frontend/assets/css/login.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./frontend/assets/img/c-icon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./frontend/assets/css/reset.css" />
+    <link rel="stylesheet" href="./frontend/assets/css/styles.css" />
+    <link rel="stylesheet" href="./frontend/assets/css/login.css" />
     <title>Login Catflix | by Melyssa</title>
 </head>
 
 <body>
-
-    <img src="./frontend/assets/img/loginbackground.jpg" class="background">
-    <header>
+    <main class="login-wrapper">
         <img src="./frontend/assets/img/catflix-logo.png" class="catflix-logo">
-    </header>
+        <section class="login-container">
+            <form class="login">
+                <div class="email">
+                    <h1 class="login-title">Entre</h1>
+                    <input type="email" name="email" placeholder="Email ou telefone" class="inpute" />
+                    <input type="password" name="password" placeholder="Senha" class="inputp" />
+                </div>
 
-    <form class="login-container">
-        <div class="login">
-            <div class="email">
-                <h1 class="login-title">Entre</h1>
-                <input type="email" name="email" placeholder="Email ou telefone" class="inpute">
-                <input type="password" name="password" placeholder="Senha" class="inputp">
-            </div>
+                <button type="submit" class="submit-btn">Logar</button>
 
-            <button type="submit" class="submit-btn">Logar</button>
+                <div class="remember">
+                    <input type="radio" name="remember" id="rememberme" />
+                    <label for="remember" class="rememberme">Lembrar de mim</label>
+                    <a href="#" class="remember-link">Precisa de ajuda?</a>
+                </div>
 
-            <div class="remember">
-                <input type="radio" name="remember" id="rememberme">
-                <label for="remember" class="rememberme">Lembrar de mim</label>
-                <a href="#" class="remember-link">Precisa de ajuda?</a>
-            </div>
-
-            <div class="sign-up">
-                <p class="sign-up__text">Novo no Catflix?</p>
-                <a href="#" class="sign-up__link">Se inscreva agora.</a>
-            </div>
-        </div>
-    </form>
+                <div class="sign-up">
+                    <p class="sign-up__text">Novo no Catflix?</p>
+                    <a href="#" class="sign-up__link">Se inscreva agora.</a>
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>
