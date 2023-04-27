@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./frontend/assets/css/header.css">
     <link rel="stylesheet" href="./frontend/assets/css/secoes.css">
     <link rel="stylesheet" href="./frontend/assets/css/footer.css">
+    <link rel="stylesheet" href="./frontend/assets/css/banner.css">
 
     <title>Catflix | by Melyssa</title>
 </head>
@@ -26,13 +27,15 @@
                     <div class="dropwdown-container">
                         <li class="header-nav"><button class="header-item dropdown-btn" id="dropdownBtn">Filmes</button></li>
 
-                        <ul class="dropdown" id="dropdownMenu">
-                            <li class="dropdown-list"><a href="#action" class="dropdown-item">Ação</a></li>
-                            <li class="dropdown-list"><a href="#drama" class="dropdown-item">Drama</a></li>
-                            <li class="dropdown-list"><a href="#fiction" class="dropdown-item">Ficção</a></li>
-                            <li class="dropdown-list"><a href="#romance" class="dropdown-item">Romance</a></li>
-                            <li class="dropdown-list"><a href="#horror" class="dropdown-item">Terror</a></li>
-                        </ul>
+                        <div id="dropdownMenu">
+                            <ul class="dropdown">
+                                <li class="dropdown-list"><a href="#action" class="dropdown-item">Ação</a></li>
+                                <li class="dropdown-list"><a href="#drama" class="dropdown-item">Drama</a></li>
+                                <li class="dropdown-list"><a href="#fiction" class="dropdown-item">Ficção</a></li>
+                                <li class="dropdown-list"><a href="#romance" class="dropdown-item">Romance</a></li>
+                                <li class="dropdown-list"><a href="#horror" class="dropdown-item">Terror</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <li class="header-nav"><a href="#tv-show" class="header-item">Séries</a></li>
                     <li class="header-nav"><a href="#" class="header-item">Bombando</a></li>
@@ -45,10 +48,12 @@
                 <a href="./login.html" class="profile-photo"><i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i></a>
             </div>
         </nav>
-        
     </header>
 
     <main>
+        <section class="container">
+            <img src="./frontend/assets/img/banner1.jpg" class="banner">
+        </section>
 
         <section class="container"> <!--Seções para os carrosséis dos filmes-->
             <div class="continue">

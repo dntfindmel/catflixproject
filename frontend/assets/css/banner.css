@@ -1,0 +1,19 @@
+.banner {
+    margin-top: 4em;
+    object-fit: cover;
+    width: 100%;
+    height: 750px;
+}
+
+
+.logo-container {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.banner-text {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .5em;
+}

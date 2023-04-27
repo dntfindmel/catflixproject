@@ -53,15 +53,20 @@
 
 .submit-btn {
     width: 350px;
-    margin: 3em 5em 1em 4em;
-    padding: 15px;
+    margin: 3em 5em 1em 5em;
+    padding: 20px;
     background: var(--principal-color);
-    color: white;
     border: var(--principal-color);
     border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-link {
+    color: white;
     font-size: 16px;
     font-weight: 500;
-    cursor: pointer;
+    text-decoration: none;
+    padding: 40px;
 }
 
 .remember {

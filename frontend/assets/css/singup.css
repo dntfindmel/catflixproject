@@ -1,0 +1,151 @@
+body {
+    background: #020d1c;
+}
+
+.header-bg {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    opacity: 40%;
+    z-index: -1;
+
+}
+
+.container {
+    background-image: linear-gradient(to right, #020d1c, #020d1c00);
+    height: 100vh;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+}
+
+.catflix-logo {
+    width: 120px;
+    margin: 2em 4em;
+}
+
+#language {
+    background: #101010;
+    color: white;
+    border-radius: 4px;
+    padding: .5em;
+    margin-right: 1em;
+}
+
+.header-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    background: var(--principal-color);
+    padding: .5em .8em;
+    border-radius: 4px;
+    margin-right: 4em;
+}
+
+.header-link:hover {
+    background: #cc3333;
+}
+
+.header__container {
+    margin-top: 10%;
+    margin-left: 6em;
+}
+
+.signup-title {
+    color: white;
+    font-size: 64px;
+    width: 75%;
+    font-weight: 600;
+    margin-bottom: .4em;
+}
+
+.signup-text {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.signup-subtext {
+    color: white;
+    font-size: 18px;
+    margin-bottom: .5em;
+}
+
+.signup-input {
+    background: #101010;
+    border: .5px solid gray;
+    border-radius: 4px;
+    padding: 15px 200px 15px 8px;
+    outline: none;
+    color: white;
+}
+
+.signup-input::placeholder {
+    color: white;
+}
+
+.signup-input:focus {
+    border: 1px solid white;
+}
+
+.signup-submit {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: .9em 1.8em;
+    border-radius: 4px;
+    background: var(--principal-color);
+}
+
+.signup-submit:hover {
+    background: #cc3333;
+}
+
+@media screen and (max-width: 440px) {
+    .catflix-logo {
+        margin: 1.5em;
+    }
+
+    .header-link {
+        margin-right: 1.5em;
+    }
+
+    .header__container {
+        margin-left: 2.5em;
+        margin-top: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signup-title {
+        font-size: 48px;
+    }
+
+    .signup-text {
+        font-size: 28px;
+    }
+
+    .signup-subtext {
+        font-size: 24px;
+        font-weight: lighter;
+        margin-bottom: 1em;
+    }
+
+    .signup-input {
+        width: 350px;
+        font-size: 20px;
+    }
+
+    .signup-submit {
+        margin-top: 1.5em;
+        width: 150px
+    }
+
+}
